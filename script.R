@@ -42,7 +42,7 @@ xpc <- sample(seq(0.2, 0.8, by=0.1), 2)
 ypc <- sample(seq(0.2, 0.8, by=0.1), 2)
 
 # plot points and intial pseudo-centers
-dummy = deldir(0,0, rw=c(0,1,0,1))
+dummy = deldir(xpc,ypc, dpl=list(ndx=1,ndy=0), rw=c(0,1,0,1))
 plot(tile.list(dummy), pch=NA, close = TRUE)  # voronoi boundaries
 points(xp,yp, pch=4, cex=2) # points
 points(xpc,ypc, pch=16, asp=1, cex=2) # centers
